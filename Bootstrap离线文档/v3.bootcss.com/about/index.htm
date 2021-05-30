@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap - ç®€æ´ã€ç›´è§‚ã€å¼ºæ‚ã€ç§»åŠ¨è®¾å¤‡ä¼˜å…ˆçš„å‰ç«¯å¼€å‘æ¡†æ¶ï¼Œè®©webå¼€å‘æ›´è¿…é€Ÿã€ç®€å•ã€‚">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="author" content="è¯‘è€…ï¼šç‹èµ› <wangsai@bootcss.com>">
+
+<title>
+  
+    å…³äº Bootstrap &middot; Bootstrap v3 ä¸­æ–‡æ–‡æ¡£
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../../cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" tppabs="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="../assets/css/patch.css" tppabs="http://v3.bootcss.com/assets/css/patch.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+
+<link href="../assets/css/docs.min.css" tppabs="http://v3.bootcss.com/assets/css/docs.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js" tppabs="http://v3.bootcss.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../assets/js/ie-emulation-modes-warning.js" tppabs="http://v3.bootcss.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../../cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js" tppabs="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="../../cdn.bootcss.com/respond.js/1.4.2/respond.min.js" tppabs="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+<script>
+  var _hmt = _hmt || [];
+</script>
+  </head>
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../index.htm" tppabs="http://v3.bootcss.com/" class="navbar-brand">Bootstrap</a>
+    </div>
+    <nav id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="../getting-started/index.htm" tppabs="http://v3.bootcss.com/getting-started/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3å¯¼èˆª-èµ·æ­¥'])">èµ·æ­¥</a>
+        </li>
+        <li>
+          <a href="../css/index.htm" tppabs="http://v3.bootcss.com/css/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3å¯¼èˆª-å…¨å±€CSSæ ·å¼'])">å…¨å±€ CSS æ ·å¼</a>
+        </li>
+        <li>
+          <a href="../components/index.htm" tppabs="http://v3.bootcss.com/components/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3å¯¼èˆª-ç»„ä»¶'])">ç»„ä»¶</a>
+        </li>
+        <li>
+          <a href="../javascript/index.htm" tppabs="http://v3.bootcss.com/javascript/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3å¯¼èˆª-JavaScriptæ’ä»¶'])">JavaScript æ’ä»¶</a>
+        </li>
+        <li>
+          <a href="../customize/index.htm" tppabs="http://v3.bootcss.com/customize/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3å¯¼èˆª-å®šåˆ¶'])">å®šåˆ¶</a>
+        </li>
+        <li><a href="javascript:if(confirm('http://expo.bootcss.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://expo.bootcss.com/'" tppabs="http://expo.bootcss.com/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3å¯¼èˆª-ç½‘ç«™å®ä¾‹'])" target="_blank">ç½‘ç«™å®ä¾‹</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="javascript:if(confirm('http://www.bootcss.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://www.bootcss.com/'" tppabs="http://www.bootcss.com/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3å¯¼èˆª-Bootstrapä¸­æ–‡ç½‘'])" target="_blank">Bootstrapä¸­æ–‡ç½‘</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content" tabindex="-1">
+      <div class="container">
+        <h1>å…³äº Bootstrap</h1>
+        <p>äº†è§£ Bootstrap é¡¹ç›®çš„å†å²ã€ä»‹ç»é¡¹ç›®ç»„æˆå‘˜ä»¥åŠå¦‚ä½•ä½¿ç”¨ Bootstrap å•†æ ‡ã€‚</p>
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <!-- History
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="history" class="page-header">å†å²</h1>
+
+  <p class="lead">Bootstrap æœ€åˆæ˜¯ç”±å°±èŒäº Twitter çš„ä¸€ä¸ªè®¾è®¡å¸ˆå’Œä¸€ä¸ªå·¥ç¨‹å¸ˆåˆ›é€ çš„ï¼Œç°åœ¨ï¼ŒBootstrap å·²ç»æˆä¸ºäº†è¿™ä¸ªä¸–ç•Œä¸Šæœ€æµè¡Œçš„å‰ç«¯å¼€å‘æ¡†æ¶å’Œå¼€æºé¡¹ç›®ã€‚</p>
+  <p>Bootstrap æœ€åˆæ˜¯ç”± <a href="javascript:if(confirm('https://twitter.com/mdo  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://twitter.com/mdo'" tppabs="https://twitter.com/mdo">@mdo</a> å’Œ <a href="javascript:if(confirm('https://twitter.com/fat  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://twitter.com/fat'" tppabs="https://twitter.com/fat">@fat</a> äº2010å¹´ä¸­æ—¬åˆ›é€ çš„ã€‚ åœ¨å¼€æºä¹‹å‰è¢«ç§°ä¸º <em>Twitter Blueprint</em>ã€‚ç»è¿‡å‡ ä¸ªæœˆçš„å¼€å‘ï¼ŒTwitter ä¸¾åŠäº†é¦–å±Š <a href="javascript:if(confirm('https://blog.twitter.com/2010/hack-week  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://blog.twitter.com/2010/hack-week'" tppabs="https://blog.twitter.com/2010/hack-week">Hack Week</a> å¹¶å°†è¿™ä¸ªé¡¹ç›®è¢«å…¬å¸ƒå‡ºæ¥ï¼Œå„ä¸ªæŠ€èƒ½æ°´å¹³çš„å¼€å‘è€…éƒ½å¯ä»¥åœ¨æ²¡æœ‰ä»»ä½•å¤–éƒ¨æŒ‡å¯¼çš„æƒ…å†µä¸‹å‚ä¸è¿›æ¥ã€‚åœ¨å¼€æºä¹‹å‰çš„è¿‘ä¸€å¹´å¤šçš„æ—¶é—´é‡Œï¼Œè¿™ä¸ªé¡¹ç›®ä½œä¸ºå…¬å¸å†…éƒ¨å·¥å…·å¼€å‘çš„æ ·å¼æŒ‡å—ï¼Œå½“ç„¶ï¼Œç°åœ¨å®ƒä»ç„¶æ‰®æ¼”è€…åŒæ ·çš„è§’è‰²ã€‚</p>
+  <p>é¦–ä¸ªç‰ˆæœ¬<a href="javascript:if(confirm('https://blog.twitter.com/2011/bootstrap-twitter  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://blog.twitter.com/2011/bootstrap-twitter'" tppabs="https://blog.twitter.com/2011/bootstrap-twitter">å‘å¸ƒ</a>äº <a href="javascript:if(confirm('https://twitter.com/mdo/statuses/104620039650557952  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://twitter.com/mdo/statuses/104620039650557952'" tppabs="https://twitter.com/mdo/statuses/104620039650557952"><time datetime="2011-08-19 11:25">2011å¹´8æœˆ19æ—¥ï¼ˆæ˜ŸæœŸäº”ï¼‰</time></a>ï¼Œç›®å‰å·²ç»å‘å¸ƒäº†è¶…è¿‡<a href="javascript:if(confirm('https://github.com/twbs/bootstrap/releases  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap/releases'" tppabs="https://github.com/twbs/bootstrap/releases">20ä¸ªç‰ˆæœ¬</a>ï¼ŒåŒ…æ‹¬ v2 å’Œ v3 ä¸¤æ¬¡é‡æ„ã€‚åœ¨ Bootstrap 2 ç‰ˆæœ¬ï¼Œæˆ‘ä»¬ä¸ºæ•´ä¸ªæ¡†æ¶æ·»åŠ äº†å¯¹å“åº”å¼å¸ƒå±€çš„æ”¯æŒï¼Œä½†æ˜¯ï¼Œè¿™æ˜¯ä½œä¸ºä¸€ä¸ªå¯é€‰çš„æ ·å¼è¡¨è€Œæä¾›çš„ã€‚åœ¨å‰ä¸€ç‰ˆçš„åŸºç¡€ä¸Šæ²ƒæ©åˆå‘å¸ƒäº† Bootstrap 3 ç‰ˆæœ¬ï¼Œæˆ‘ä»¬å†ä¸€æ¬¡é‡æ„äº†æ•´ä¸ªæ¡†æ¶ï¼Œå¹¶å°†â€œç§»åŠ¨è®¾å¤‡ä¼˜å…ˆâ€è¿™ä¸€ç†å¿µæ·±åˆ»çš„èå…¥åˆ°æ•´ä¸ªæ¡†æ¶ä¸­ã€‚</p>
+</div>
+
+
+<!-- Team
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="team" class="page-header">ç ”å‘å°ç»„</h1>
+
+  <p class="lead">Bootstrap ç”±åˆ›å§‹æˆå‘˜å’Œä¸€ç»„æ ¸å¿ƒè´¡çŒ®è€…ç»´æŠ¤ï¼Œä»–ä»¬ä¸ºç¤¾åŒºæä¾›äº†å·¨å¤§çš„å¸®åŠ©å’Œæ”¯æŒã€‚</p>
+
+  <h2 id="team-core">æ ¸å¿ƒç ”å‘ç»„</h2>
+  <div class="list-group bs-team">
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=mdo&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=mdo&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/mdo  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/mdo'" tppabs="https://github.com/mdo">
+          <img src="../../secure.gravatar.com/avatar/bc4ab438f7a4ce1c406aadc688427f2c.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/bc4ab438f7a4ce1c406aadc688427f2c.jpg?s=32" alt="@mdo avatar" width="32" height="32">
+          <strong>Mark Otto</strong> <small>@mdo</small>
+        </a>
+      </div>
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=fat&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=fat&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/fat  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/fat'" tppabs="https://github.com/fat">
+          <img src="../../secure.gravatar.com/avatar/a98244cbdacaf1c0b55499466002f7a8.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/a98244cbdacaf1c0b55499466002f7a8.jpg?s=32" alt="@fat avatar" width="32" height="32">
+          <strong>Jacob Thornton</strong> <small>@fat</small>
+        </a>
+      </div>
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=cvrebert&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=cvrebert&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/cvrebert  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/cvrebert'" tppabs="https://github.com/cvrebert">
+          <img src="../../secure.gravatar.com/avatar/edec428c425453955f770095a7d26c50.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/edec428c425453955f770095a7d26c50.jpg?s=32" alt="@cvrebert avatar" width="32" height="32">
+          <strong>Chris Rebert</strong> <small>@cvrebert</small>
+        </a>
+      </div>
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=juthilo&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=juthilo&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/juthilo  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/juthilo'" tppabs="https://github.com/juthilo">
+          <img src="../../secure.gravatar.com/avatar/0f7dd3ce58a416be5685ea6194f82b11.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/0f7dd3ce58a416be5685ea6194f82b11.jpg?s=32" alt="@juthilo avatar" width="32" height="32">
+          <strong>Julian Thilo</strong> <small>@juthilo</small>
+        </a>
+      </div>
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=xhmikosr&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=xhmikosr&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/xhmikosr  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/xhmikosr'" tppabs="https://github.com/xhmikosr">
+          <img src="../../secure.gravatar.com/avatar/e37759b1ea0125d4e97b1e00b5eed26f.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/e37759b1ea0125d4e97b1e00b5eed26f.jpg?s=32" alt="@xhmikosr avatar" width="32" height="32">
+          <strong>XhmikosR</strong> <small>@xhmikosr</small>
+        </a>
+      </div>
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=hnrch02&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=hnrch02&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/hnrch02  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/hnrch02'" tppabs="https://github.com/hnrch02">
+          <img src="../../secure.gravatar.com/avatar/0d53f5d3d3d28bd470f394d98f7ef48f.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/0d53f5d3d3d28bd470f394d98f7ef48f.jpg?s=32" alt="@hnrch02 avatar" width="32" height="32">
+          <strong>Heinrich Fenkart</strong> <small>@hnrch02</small>
+        </a>
+      </div>
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=patrickhlauke&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=patrickhlauke&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/patrickhlauke  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/patrickhlauke'" tppabs="https://github.com/patrickhlauke">
+          <img src="../../secure.gravatar.com/avatar/357f279672db832fc41a5a2f36559fcb.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/357f279672db832fc41a5a2f36559fcb.jpg?s=32" alt="@patrickhlauke avatar" width="32" height="32">
+          <strong>Patrick H. Lauke</strong> <small>@patrickhlauke</small>
+        </a>
+      </div>
+    
+  </div>
+  <p>Get involved with Bootstrap development by é€šè¿‡ <a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/new  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap/issues/new'" tppabs="https://github.com/twbs/bootstrap/issues/new">opening an issue</a> æˆ–æäº¤ pull request å³å¯å‚ä¸ Bootstrap çš„å¼€å‘ã€‚è¯·é˜…è¯»<a href="javascript:if(confirm('https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md'" tppabs="https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md">è´¡çŒ®æŒ‡å—</a>æ¥äº†è§£æˆ‘ä»¬æ˜¯æ€æ ·çš„å¼€å‘æµç¨‹ã€‚</p>
+
+  <h2 id="team-sass">Sass ç ”å‘ç»„</h2>
+  <div class="list-group bs-team">
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=thomas-mcdonald&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=thomas-mcdonald&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/thomas-mcdonald  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/thomas-mcdonald'" tppabs="https://github.com/thomas-mcdonald">
+          <img src="../../secure.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/24cd55ab1a62ffb113ab8c02f64c9301.jpg?s=32" alt="@thomas-mcdonald avatar" width="32" height="32">
+          <strong>Thomas McDonald</strong> <small>@thomas-mcdonald</small>
+        </a>
+      </div>
+    
+      <div class="list-group-item">
+        <iframe class="github-btn" src="../../ghbtns.com/github-btn.html-user=glebm&type=follow" tppabs="https://ghbtns.com/github-btn.html?user=glebm&type=follow"></iframe>
+        <a class="team-member" href="javascript:if(confirm('https://github.com/glebm  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/glebm'" tppabs="https://github.com/glebm">
+          <img src="../../secure.gravatar.com/avatar/729f685b8e8d7e9feed18c177c82e59b.jpg-s=32" tppabs="https://secure.gravatar.com/avatar/729f685b8e8d7e9feed18c177c82e59b.jpg?s=32" alt="@glebm avatar" width="32" height="32">
+          <strong>Gleb Mazovetskiy</strong> <small>@glebm</small>
+        </a>
+      </div>
+    
+  </div>
+  <p><a href="javascript:if(confirm('https://github.com/twbs/bootstrap-sass  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap-sass'" tppabs="https://github.com/twbs/bootstrap-sass">Bootstrap å®˜æ–¹æ”¯æŒçš„ Sass ç§»æ¤ç‰ˆé¡¹ç›®</a>ç”±è¿™ä¸ªå°ç»„è´Ÿè´£ã€‚è¿™ä¸ªé¡¹ç›®åœ¨ v3.1.0 ç‰ˆæœ¬æ—¶æ­£å¼åŠ å…¥ Bootstrap å®˜æ–¹ç»„ç»‡ã€‚è¯·æŸ¥çœ‹ Sass <a href="javascript:if(confirm('https://github.com/twbs/bootstrap-sass/blob/master/CONTRIBUTING.md  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap-sass/blob/master/CONTRIBUTING.md'" tppabs="https://github.com/twbs/bootstrap-sass/blob/master/CONTRIBUTING.md">è´¡çŒ®æŒ‡å—</a>æ¥äº†è§£ Sass ç§»æ¤ç‰ˆæ˜¯æ€æ ·çš„å¼€å‘æµç¨‹ã€‚</p>
+</div>
+
+
+<!-- Brand
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="brand" class="page-header">å•†æ ‡ä½¿ç”¨æŒ‡å—</h1>
+
+  <p class="lead">éœ€è¦ä½¿ç”¨ Bootstrap çš„å•†æ ‡èµ„æºå—ï¼Ÿæˆ‘ä»¬åªæœ‰å¾ˆå°‘çš„å‡ æ¡æŒ‡å¯¼æ„è§ä¾›å¤§å®¶ä¸€èµ·éµå®ˆï¼Œå½“ç„¶ï¼Œå¸Œæœ›ä½ ä¹Ÿèƒ½éµå®ˆã€‚è¿™å‡ æ¡æŒ‡å¯¼æ„è§å—åˆ°äº† MailChimp çš„<a href="javascript:if(confirm('http://mailchimp.com/about/brand-assets/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://mailchimp.com/about/brand-assets/'" tppabs="http://mailchimp.com/about/brand-assets/" target="_blank">å•†æ ‡èµ„äº§</a>çš„å¯å‘ã€‚</p>
+
+  <h2>æ ‡è®°å’Œæ ‡å¿—</h2>
+  <p>ä½¿ç”¨ Bootstrap çš„æ ‡è®°ï¼ˆå¤§å†™çš„ <strong>B</strong>ï¼‰æˆ–è€…æ ‡å‡†çš„æ ‡å¿—ï¼ˆå³ <strong>Bootstrap</strong>ï¼‰ã€‚æˆ‘ä»¬é‡‡ç”¨çš„æ˜¯ Helvetica Neue Bold å­—ä½“ã€‚<strong>è¯·ä¸è¦å°† Twitter çš„å°é¸Ÿæ ‡å¿—</strong>å’Œæˆ‘ä»¬çš„ Bootstrap æ ‡å¿—ä¸€èµ·ä½¿ç”¨ï¼</p>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <div class="bs-docs-booticon bs-docs-booticon-lg">B</div>
+    </div>
+    <div class="bs-brand-item inverse">
+      <div class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-inverse">B</div>
+    </div>
+  </div>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <h1>Bootstrap</h1>
+    </div>
+    <div class="bs-brand-item inverse">
+      <h1>Bootstrap</h1>
+    </div>
+  </div>
+
+  <h2>ä¸‹è½½</h2>
+  <p>æˆ‘ä»¬æä¾›äº† Bootstrap æ ‡å¿—çš„3ç§æ ·å¼ï¼Œæ¯ç§æ ·å¼éƒ½æä¾›äº† SVG æ ¼å¼çš„æ–‡ä»¶ã€‚è¯·ç‚¹å‡»å³é”®ä¿å­˜ã€‚</p>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <img class="svg" src="../assets/brand/bootstrap-solid.svg" tppabs="http://v3.bootcss.com/assets/brand/bootstrap-solid.svg" alt="Bootstrap" width="144" height="144">
+    </div>
+    <div class="bs-brand-item inverse">
+      <img class="svg" src="../assets/brand/bootstrap-outline.svg" tppabs="http://v3.bootcss.com/assets/brand/bootstrap-outline.svg" alt="Bootstrap" width="144" height="144">
+    </div>
+    <div class="bs-brand-item inverse">
+      <img class="svg" src="../assets/brand/bootstrap-punchout.svg" tppabs="http://v3.bootcss.com/assets/brand/bootstrap-punchout.svg" alt="Bootstrap" width="144" height="144">
+    </div>
+  </div>
+
+  <h2>å‘½å</h2>
+  <p>æœ¬é¡¹ç›®ä»¥åŠæ•´ä¸ªæ¡†æ¶å¿…é¡»åªèƒ½è¢«ç§°ä¸º <strong>Bootstrap</strong>ã€‚å‰é¢æ²¡æœ‰ Twitter å­—æ ·ï¼Œ<em>s</em> ä¹Ÿä¸èƒ½å¤§å†™ï¼Œå¹¶ä¸”é™¤äº†å¤§å†™çš„ <strong>B</strong>ï¼Œå†ä¹Ÿæ²¡æœ‰ä»»ä½•å…¶ä»–çš„ç¼©å†™å½¢å¼ã€‚</p>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <h3>Bootstrap</h3>
+      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+      <span class="sr-only">(correct)</span>
+    </div>
+    <div class="bs-brand-item">
+      <h3 class="text-muted">BootStrap</h3>
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      <span class="sr-only">(incorrect)</span>
+    </div>
+    <div class="bs-brand-item">
+      <h3 class="text-muted">Twitter Bootstrap</h3>
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      <span class="sr-only">(incorrect)</span>
+    </div>
+  </div>
+
+  <h2>é¢œè‰²</h2>
+  <p>æˆ‘ä»¬çš„æ–‡æ¡£å’Œå•†æ ‡ä½¿ç”¨äº†å‡ ç§é¢œè‰²ç”¨ä»¥åŒºåˆ«ä»€ä¹ˆ<em>æ˜¯</em> Bootstrap ä»¥åŠä»€ä¹ˆ<em>æ˜¯è¢«</em> Bootstrap åŒ…å«çš„å†…å®¹ã€‚æ¢å¥è¯è¯´ï¼Œå¦‚æœæ˜¯ç´«è‰²ï¼ˆpurpleï¼‰ï¼Œè¡¨ç¤ºçš„å°±æ˜¯ Bootstrapã€‚</p>
+  <div class="bs-brand">
+    <div class="color-swatches">
+      <div class="color-swatch bs-purple"></div>
+      <div class="color-swatch bs-purple-light"></div>
+      <div class="color-swatch bs-purple-lighter"></div>
+      <div class="color-swatch bs-gray"></div>
+    </div>
+  </div>
+</div>
+
+        </div>
+        
+        <div class="col-md-3" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav">
+              
+                <li>
+  <a href="#history">å†å²</a>
+</li>
+<li>
+  <a href="#team">ç ”å‘å°ç»„</a>
+</li>
+<li>
+  <a href="#brand">å•†æ ‡ä½¿ç”¨æŒ‡å—</a>
+</li>
+
+              
+            </ul>
+            <a class="back-to-top" href="#top">
+              è¿”å›é¡¶éƒ¨
+            </a>
+            
+          </nav>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+
+    <p>Designed and built with all the love in the world by <a href="javascript:if(confirm('https://twitter.com/mdo  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://twitter.com/mdo'" tppabs="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="javascript:if(confirm('https://twitter.com/fat  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://twitter.com/fat'" tppabs="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="javascript:if(confirm('https://github.com/orgs/twbs/people  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/orgs/twbs/people'" tppabs="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="javascript:if(confirm('https://github.com/twbs/bootstrap/graphs/contributors  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap/graphs/contributors'" tppabs="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>æœ¬é¡¹ç›®æºç å— <a rel="license" href="javascript:if(confirm('https://github.com/twbs/bootstrap/blob/master/LICENSE  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap/blob/master/LICENSE'" tppabs="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>å¼€æºåè®®ä¿æŠ¤ï¼Œæ–‡æ¡£å— <a rel="license" href="javascript:if(confirm('https://creativecommons.org/licenses/by/3.0/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://creativecommons.org/licenses/by/3.0/'" tppabs="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> å¼€æºåè®®ä¿æŠ¤ã€‚</p>
+    <ul class="bs-docs-footer-links text-muted">
+      <li>å½“å‰ç‰ˆæœ¬ï¼š v3.3.5</li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('https://github.com/twbs/bootstrap  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap'" tppabs="https://github.com/twbs/bootstrap">GitHub ä»“åº“</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/index.htm#examples" tppabs="http://v3.bootcss.com/getting-started/#examples">å®ä¾‹ç²¾é€‰</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('http://v2.bootcss.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://v2.bootcss.com/'" tppabs="http://v2.bootcss.com/">v2.3.2 ä¸­æ–‡æ–‡æ¡£</a></li>
+      <li>&middot;</li>
+      <li><a href="index.htm" tppabs="http://v3.bootcss.com/about/">å…³äº</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('http://expo.bootcss.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://expo.bootcss.com/'" tppabs="http://expo.bootcss.com/">ä¼˜ç«™ç²¾é€‰</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('http://blog.getbootstrap.com/  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ËüÎ»ÓÚÆğÊ¼µØÖ·ÒÔÉèÖÃµÄ±ß½çÒÔÍâµÄÓò»òÂ·¾¶ÖĞ¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='http://blog.getbootstrap.com/'" tppabs="http://blog.getbootstrap.com/">å®˜æ–¹åšå®¢</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap/issues'" tppabs="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/releases  \n\n¸ÃÎÄ¼şÎ´±» Teleport Pro ÏÂÔØ£¬ÒòÎª ÊÇÒ»¸öÊ¹ÓÃÎ´Ö§³ÖĞ­ÒéµÄµØÖ·(ÀıÈç: gopher)¡£  \n\nÄãÏëÒª´Ó·şÎñÆ÷´ò¿ªËüÂğ?'))window.location='https://github.com/twbs/bootstrap/releases'" tppabs="https://github.com/twbs/bootstrap/releases">å†å²ç‰ˆæœ¬</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../cdn.bootcss.com/jquery/1.11.3/jquery.min.js" tppabs="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <script src="../../cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js" tppabs="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+  <script src="../assets/js/docs.min.js" tppabs="http://v3.bootcss.com/assets/js/docs.min.js"></script>
+
+
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../assets/js/ie10-viewport-bug-workaround.js" tppabs="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+<!-- Analytics
+================================================== -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbdb993b828cbe079a7fbc1a951f44726' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- å…¨å±€ç»Ÿè®¡ä»£ç  -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F079fac161efc4b2a6f31e80064f14e82' type='text/javascript'%3E%3C/script%3E"));
+</script>
+  </body>
+</html>

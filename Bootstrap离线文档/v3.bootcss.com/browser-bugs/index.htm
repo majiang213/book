@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap - ÁÆÄÊ¥Å„ÄÅÁõ¥ËßÇ„ÄÅÂº∫ÊÇç„ÄÅÁßªÂä®ËÆæÂ§á‰ºòÂÖàÁöÑÂâçÁ´ØÂºÄÂèëÊ°ÜÊû∂ÔºåËÆ©webÂºÄÂèëÊõ¥ËøÖÈÄü„ÄÅÁÆÄÂçï„ÄÇ">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="author" content="ËØëËÄÖÔºöÁéãËµõ <wangsai@bootcss.com>">
+
+<title>
+  
+    Wall of browser bugs &middot; Bootstrap v3 ‰∏≠ÊñáÊñáÊ°£
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../../cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" tppabs="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="../assets/css/patch.css" tppabs="http://v3.bootcss.com/assets/css/patch.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+
+<link href="../assets/css/docs.min.css" tppabs="http://v3.bootcss.com/assets/css/docs.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js" tppabs="http://v3.bootcss.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="../assets/js/ie-emulation-modes-warning.js" tppabs="http://v3.bootcss.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="../../cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js" tppabs="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="../../cdn.bootcss.com/respond.js/1.4.2/respond.min.js" tppabs="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+<script>
+  var _hmt = _hmt || [];
+</script>
+  </head>
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+
+    <!-- Docs master nav -->
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../index.htm" tppabs="http://v3.bootcss.com/" class="navbar-brand">Bootstrap</a>
+    </div>
+    <nav id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="../getting-started/index.htm" tppabs="http://v3.bootcss.com/getting-started/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3ÂØºËà™-Ëµ∑Ê≠•'])">Ëµ∑Ê≠•</a>
+        </li>
+        <li>
+          <a href="../css/index.htm" tppabs="http://v3.bootcss.com/css/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3ÂØºËà™-ÂÖ®Â±ÄCSSÊ†∑Âºè'])">ÂÖ®Â±Ä CSS Ê†∑Âºè</a>
+        </li>
+        <li>
+          <a href="../components/index.htm" tppabs="http://v3.bootcss.com/components/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3ÂØºËà™-ÁªÑ‰ª∂'])">ÁªÑ‰ª∂</a>
+        </li>
+        <li>
+          <a href="../javascript/index.htm" tppabs="http://v3.bootcss.com/javascript/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3ÂØºËà™-JavaScriptÊèí‰ª∂'])">JavaScript Êèí‰ª∂</a>
+        </li>
+        <li>
+          <a href="../customize/index.htm" tppabs="http://v3.bootcss.com/customize/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3ÂØºËà™-ÂÆöÂà∂'])">ÂÆöÂà∂</a>
+        </li>
+        <li><a href="javascript:if(confirm('http://expo.bootcss.com/  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™ À¸Œª”⁄∆ ºµÿ÷∑“‘…Ë÷√µƒ±ﬂΩÁ“‘Õ‚µƒ”ÚªÚ¬∑æ∂÷–°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='http://expo.bootcss.com/'" tppabs="http://expo.bootcss.com/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3ÂØºËà™-ÁΩëÁ´ôÂÆû‰æã'])" target="_blank">ÁΩëÁ´ôÂÆû‰æã</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="javascript:if(confirm('http://www.bootcss.com/  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™ À¸Œª”⁄∆ ºµÿ÷∑“‘…Ë÷√µƒ±ﬂΩÁ“‘Õ‚µƒ”ÚªÚ¬∑æ∂÷–°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='http://www.bootcss.com/'" tppabs="http://www.bootcss.com/" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'V3ÂØºËà™-Bootstrap‰∏≠ÊñáÁΩë'])" target="_blank">Bootstrap‰∏≠ÊñáÁΩë</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content" tabindex="-1">
+      <div class="container">
+        <h1>Wall of browser bugs</h1>
+        <p>A list of the browser bugs that Bootstrap is currently grappling with.</p>
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-12" role="main">
+          <div class="bs-docs-section">
+  <h1 id="browser-bugs" class="page-header">Browser bugs</h1>
+
+  <p class="lead">Bootstrap currently works around several outstanding browser bugs in major browsers to deliver the best cross-browser experience possible. Some bugs, like those listed below, cannot be solved by us.</p>
+  <p>We publicly list browser bugs that are impacting us here, in the hopes of expediting the process of fixing them. For information on Bootstrap's browser compatibility, <a href="../getting-started/index.htm#support" tppabs="http://v3.bootcss.com/getting-started/#support">see our browser compatibility docs</a>.</p>
+  <p>See also: <a href="javascript:if(confirm('https://docs.google.com/document/d/1LPaPA30bLUB_publLIMF0RlhdnPx_ePXm7oW02iiT6o  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://docs.google.com/document/d/1LPaPA30bLUB_publLIMF0RlhdnPx_ePXm7oW02iiT6o'" tppabs="https://docs.google.com/document/d/1LPaPA30bLUB_publLIMF0RlhdnPx_ePXm7oW02iiT6o">jQuery's browser bug workarounds</a></p>
+
+  <div class="table-responsive">
+    <table class="bs-docs-browser-bugs table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Browser(s)</th>
+          <th>Summary of bug</th>
+          <th>Upstream bug(s)</th>
+          <th>Bootstrap issue(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Internet Explorer 11
+</td>
+          <td><p>Hovered element still remains in <code>:hover</code> state after scrolling away.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://connect.microsoft.com/IE/feedback/details/926665  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://connect.microsoft.com/IE/feedback/details/926665'" tppabs="https://connect.microsoft.com/IE/feedback/details/926665">IE bug #926665</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14211  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14211'" tppabs="https://github.com/twbs/bootstrap/issues/14211">#14211</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Internet Explorer 11
+</td>
+          <td><p>When hovering over a <code>&lt;select&gt;</code> menu item, the cursor for the element underneath the menu is displayed.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://connect.microsoft.com/IE/feedback/details/963961  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://connect.microsoft.com/IE/feedback/details/963961'" tppabs="https://connect.microsoft.com/IE/feedback/details/963961">IE bug #963961</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14528  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14528'" tppabs="https://github.com/twbs/bootstrap/issues/14528">#14528</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Firefox
+</td>
+          <td><p><code>.table-bordered</code> with an empty <code>&lt;tbody&gt;</code> is missing borders.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugzilla.mozilla.org/show_bug.cgi?id=1023761  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugzilla.mozilla.org/show_bug.cgi?id=1023761'" tppabs="https://bugzilla.mozilla.org/show_bug.cgi?id=1023761">Mozilla bug #1023761</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/13453  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/13453'" tppabs="https://github.com/twbs/bootstrap/issues/13453">#13453</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Firefox
+</td>
+          <td><p><code>max-width: 100%;</code> doesn‚Äôt work inside tables.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugzilla.mozilla.org/show_bug.cgi?id=975632  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugzilla.mozilla.org/show_bug.cgi?id=975632'" tppabs="https://bugzilla.mozilla.org/show_bug.cgi?id=975632">Mozilla bug #975632</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/10690  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/10690'" tppabs="https://github.com/twbs/bootstrap/issues/10690">#10690</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Firefox (Windows)
+</td>
+          <td><p>Java applets that are descendants of elements with forced hardware acceleration using <code>translate3d(0,0,0)</code> are invisible.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugzilla.mozilla.org/show_bug.cgi?id=1048279  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugzilla.mozilla.org/show_bug.cgi?id=1048279'" tppabs="https://bugzilla.mozilla.org/show_bug.cgi?id=1048279">Mozilla bug #1048279</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14124  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14124'" tppabs="https://github.com/twbs/bootstrap/issues/14124">#14124</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Firefox
+</td>
+          <td><p>Button elements with <code>width: 100%</code> become cropped in long tables.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugzilla.mozilla.org/show_bug.cgi?id=1060131  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugzilla.mozilla.org/show_bug.cgi?id=1060131'" tppabs="https://bugzilla.mozilla.org/show_bug.cgi?id=1060131">Mozilla bug #1060131</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14320  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14320'" tppabs="https://github.com/twbs/bootstrap/issues/14320">#14320</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Firefox
+</td>
+          <td><p>If the disabled state of a form control is changed via JavaScript, the normal state doesn‚Äôt return after refreshing the page.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugzilla.mozilla.org/show_bug.cgi?id=654072  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugzilla.mozilla.org/show_bug.cgi?id=654072'" tppabs="https://bugzilla.mozilla.org/show_bug.cgi?id=654072">Mozilla bug #654072</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/793  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/793'" tppabs="https://github.com/twbs/bootstrap/issues/793">#793</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome (OS X)
+</td>
+          <td><p>Clicking above <code>&lt;input type="number"&gt;</code> increment button flashes the decrement button.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=419108  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=419108'" tppabs="https://code.google.com/p/chromium/issues/detail?id=419108">Chromium issue #419108</a>
+</td>
+          <td>Offshoot of <a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/8350  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/8350'" tppabs="https://github.com/twbs/bootstrap/issues/8350">#8350</a> & <a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=337668  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=337668'" tppabs="https://code.google.com/p/chromium/issues/detail?id=337668">Chromium issue #337668</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome (OS X)
+</td>
+          <td><p>Caps Lock indicator not shown in <code>&lt;input type="password"&gt;</code> with <code>display: block</code></p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=460200  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=460200'" tppabs="https://code.google.com/p/chromium/issues/detail?id=460200">Chromium issue #460200</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/15832  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/15832'" tppabs="https://github.com/twbs/bootstrap/issues/15832">#15832</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome
+</td>
+          <td><p>Focus ring of image map within a modal is displayed in the wrong location.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=475128  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=475128'" tppabs="https://code.google.com/p/chromium/issues/detail?id=475128">Chromium issue #475128</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/16180  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/16180'" tppabs="https://github.com/twbs/bootstrap/issues/16180">#16180</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome
+</td>
+          <td><p><code>display: table;</code> within <code>display: block;</code> forces sibling content to new line.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=309483  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=309483'" tppabs="https://code.google.com/p/chromium/issues/detail?id=309483">Chromium issue #309483</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/9950  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/9950'" tppabs="https://github.com/twbs/bootstrap/issues/9950">#9950</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome
+</td>
+          <td><p>Incorrect viewport size used for media queries when printing.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=273306  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=273306'" tppabs="https://code.google.com/p/chromium/issues/detail?id=273306">Chromium issue #273306</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/12078  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/12078'" tppabs="https://github.com/twbs/bootstrap/issues/12078">#12078</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome
+</td>
+          <td><p>CSS infinite linear animation with alpha transparency leaks memory.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=429375  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=429375'" tppabs="https://code.google.com/p/chromium/issues/detail?id=429375">Chromium issue #429375</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14409  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14409'" tppabs="https://github.com/twbs/bootstrap/issues/14409">#14409</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome
+</td>
+          <td><p><code>:focus</code> <code>outline</code> style causes cursor to not be displayed when toggling a <code>readonly</code> <code>&lt;input&gt;</code> to read-write.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=465274  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=465274'" tppabs="https://code.google.com/p/chromium/issues/detail?id=465274">Chromium issue #465274</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/16022  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/16022'" tppabs="https://github.com/twbs/bootstrap/issues/16022">#16022</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome
+</td>
+          <td><p><code>width: 1%</code> on nested table cell causes its table to hog horizontal space.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=427994  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=427994'" tppabs="https://code.google.com/p/chromium/issues/detail?id=427994">Chromium issue #427994</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/16372  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/16372'" tppabs="https://github.com/twbs/bootstrap/issues/16372">#16372</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Chrome (Windows & Linux)
+</td>
+          <td><p>Animation glitch when returning to inactive tab after animations occurred while tab was hidden.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=449180  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=449180'" tppabs="https://code.google.com/p/chromium/issues/detail?id=449180">Chromium issue #449180</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/15298  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/15298'" tppabs="https://github.com/twbs/bootstrap/issues/15298">#15298</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari
+</td>
+          <td><p><code>width: 1%</code> on nested table cell causes its table to hog horizontal space.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=144696  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=144696'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=144696">WebKit bug #144696</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/20839572  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/20839572'" tppabs="https://openradar.appspot.com/20839572">Apple Safari Radar #20839572</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/16372  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/16372'" tppabs="https://github.com/twbs/bootstrap/issues/16372">#16372</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Scrollbar clipped in <code>select[multiple]</code> with padding.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=128489  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=128489'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=128489">WebKit bug #128489</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/19208483  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/19208483'" tppabs="https://openradar.appspot.com/19208483">Apple Safari Radar #19208483</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/12536  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/12536'" tppabs="https://github.com/twbs/bootstrap/issues/12536">#12536</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Weird button behavior with some <code>&lt;input type="number"&gt;</code> elements.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=137269  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=137269'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=137269">WebKit bug #137269</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/18834768  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/18834768'" tppabs="https://openradar.appspot.com/18834768">Apple Safari Radar #18834768</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/8350  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/8350'" tppabs="https://github.com/twbs/bootstrap/issues/8350">#8350</a>, <a href="javascript:if(confirm('https://github.com/necolas/normalize.css/issues/283  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/necolas/normalize.css/issues/283'" tppabs="https://github.com/necolas/normalize.css/issues/283">Normalize #283</a>, <a href="javascript:if(confirm('https://code.google.com/p/chromium/issues/detail?id=337668  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://code.google.com/p/chromium/issues/detail?id=337668'" tppabs="https://code.google.com/p/chromium/issues/detail?id=337668">Chromium issue #337668</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p><code>display: table-cell;</code> within media query renders incorrectly when resizing the window.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=138167  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=138167'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=138167">WebKit bug #138167</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/18987206  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/18987206'" tppabs="https://openradar.appspot.com/18987206">Apple Safari Radar #18987206</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/9774  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/9774'" tppabs="https://github.com/twbs/bootstrap/issues/9774">#9774</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Small font size when printing webpage with fixed-width <code>.container</code>.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=138192  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=138192'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=138192">WebKit bug #138192</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/19435018  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/19435018'" tppabs="https://openradar.appspot.com/19435018">Apple Safari Radar #19435018</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14868  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14868'" tppabs="https://github.com/twbs/bootstrap/issues/14868">#14868</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Alpha linear-gradient has dark line at its edge.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=139803  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=139803'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=139803">WebKit bug #139803</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/19434933  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/19434933'" tppabs="https://openradar.appspot.com/19434933">Apple Safari Radar #19434933</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/15205  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/15205'" tppabs="https://github.com/twbs/bootstrap/issues/15205">#15205</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Caps Lock indicator not shown in <code>&lt;input type="password"&gt;</code> with <code>display: block</code></p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=141804  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=141804'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=141804">WebKit bug #141804</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/19892433  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/19892433'" tppabs="https://openradar.appspot.com/19892433">Apple Safari Radar #19892433</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/15832  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/15832'" tppabs="https://github.com/twbs/bootstrap/issues/15832">#15832</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Focus ring of image map within a modal is displayed in the wrong location.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=143527  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=143527'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=143527">WebKit bug #143527</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/16180  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/16180'" tppabs="https://github.com/twbs/bootstrap/issues/16180">#16180</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (OS X)
+</td>
+          <td><p>Unnecessary line-wrapping of <code>.navbar-brand</code> text for no apparent reason</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=144990  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=144990'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=144990">WebKit bug #144990</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/20950962  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/20950962'" tppabs="https://openradar.appspot.com/20950962">Apple Safari Radar #20950962</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/15998  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/15998'" tppabs="https://github.com/twbs/bootstrap/issues/15998">#15998</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (iOS)
+</td>
+          <td><p><code>transform: translate3d(0,0,0);</code> rendering bug.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=138162  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=138162'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=138162">WebKit bug #138162</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/18804973  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/18804973'" tppabs="https://openradar.appspot.com/18804973">Apple Safari Radar #18804973</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14603  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14603'" tppabs="https://github.com/twbs/bootstrap/issues/14603">#14603</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (iOS)
+</td>
+          <td><p>Text input‚Äôs cursor doesn‚Äôt move while scrolling the page.</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=138201  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=138201'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=138201">WebKit bug #138201</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/18819624  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/18819624'" tppabs="https://openradar.appspot.com/18819624">Apple Safari Radar #18819624</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/14708  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/14708'" tppabs="https://github.com/twbs/bootstrap/issues/14708">#14708</a>
+</td>
+        </tr>
+        
+        <tr>
+          <td>Safari (iOS)
+</td>
+          <td><p><code>display: block</code> causes text of temporal <code>&lt;input&gt;</code>s to become vertically misaligned</p>
+</td>
+          <td><a href="javascript:if(confirm('https://bugs.webkit.org/show_bug.cgi?id=139848  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://bugs.webkit.org/show_bug.cgi?id=139848'" tppabs="https://bugs.webkit.org/show_bug.cgi?id=139848">WebKit bug #139848</a>, <a href="javascript:if(confirm('https://openradar.appspot.com/19434878  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://openradar.appspot.com/19434878'" tppabs="https://openradar.appspot.com/19434878">Apple Safari Radar #19434878</a>
+</td>
+          <td><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/11266  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/11266'" tppabs="https://github.com/twbs/bootstrap/issues/11266">#11266</a>, <a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues/13098  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues/13098'" tppabs="https://github.com/twbs/bootstrap/issues/13098">#13098</a>
+</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Footer
+================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+
+    <p>Designed and built with all the love in the world by <a href="javascript:if(confirm('https://twitter.com/mdo  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://twitter.com/mdo'" tppabs="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="javascript:if(confirm('https://twitter.com/fat  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://twitter.com/fat'" tppabs="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+    <p>Maintained by the <a href="javascript:if(confirm('https://github.com/orgs/twbs/people  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/orgs/twbs/people'" tppabs="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="javascript:if(confirm('https://github.com/twbs/bootstrap/graphs/contributors  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/graphs/contributors'" tppabs="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+    <p>Êú¨È°πÁõÆÊ∫êÁ†ÅÂèó <a rel="license" href="javascript:if(confirm('https://github.com/twbs/bootstrap/blob/master/LICENSE  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/blob/master/LICENSE'" tppabs="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>ÂºÄÊ∫êÂçèËÆÆ‰øùÊä§ÔºåÊñáÊ°£Âèó <a rel="license" href="javascript:if(confirm('https://creativecommons.org/licenses/by/3.0/  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://creativecommons.org/licenses/by/3.0/'" tppabs="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> ÂºÄÊ∫êÂçèËÆÆ‰øùÊä§„ÄÇ</p>
+    <ul class="bs-docs-footer-links text-muted">
+      <li>ÂΩìÂâçÁâàÊú¨Ôºö v3.3.5</li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('https://github.com/twbs/bootstrap  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap'" tppabs="https://github.com/twbs/bootstrap">GitHub ‰ªìÂ∫ì</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/index.htm#examples" tppabs="http://v3.bootcss.com/getting-started/#examples">ÂÆû‰æãÁ≤æÈÄâ</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('http://v2.bootcss.com/  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™ À¸Œª”⁄∆ ºµÿ÷∑“‘…Ë÷√µƒ±ﬂΩÁ“‘Õ‚µƒ”ÚªÚ¬∑æ∂÷–°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='http://v2.bootcss.com/'" tppabs="http://v2.bootcss.com/">v2.3.2 ‰∏≠ÊñáÊñáÊ°£</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/index.htm" tppabs="http://v3.bootcss.com/about/">ÂÖ≥‰∫é</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('http://expo.bootcss.com/  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™ À¸Œª”⁄∆ ºµÿ÷∑“‘…Ë÷√µƒ±ﬂΩÁ“‘Õ‚µƒ”ÚªÚ¬∑æ∂÷–°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='http://expo.bootcss.com/'" tppabs="http://expo.bootcss.com/">‰ºòÁ´ôÁ≤æÈÄâ</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('http://blog.getbootstrap.com/  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™ À¸Œª”⁄∆ ºµÿ÷∑“‘…Ë÷√µƒ±ﬂΩÁ“‘Õ‚µƒ”ÚªÚ¬∑æ∂÷–°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='http://blog.getbootstrap.com/'" tppabs="http://blog.getbootstrap.com/">ÂÆòÊñπÂçöÂÆ¢</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/issues  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/issues'" tppabs="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="javascript:if(confirm('https://github.com/twbs/bootstrap/releases  \n\n∏√Œƒº˛Œ¥±ª Teleport Pro œ¬‘ÿ£¨“ÚŒ™  «“ª∏ˆ π”√Œ¥÷ß≥÷–≠“Èµƒµÿ÷∑(¿˝»Á: gopher)°£  \n\nƒ„œÎ“™¥”∑˛ŒÒ∆˜¥Úø™À¸¬?'))window.location='https://github.com/twbs/bootstrap/releases'" tppabs="https://github.com/twbs/bootstrap/releases">ÂéÜÂè≤ÁâàÊú¨</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../cdn.bootcss.com/jquery/1.11.3/jquery.min.js" tppabs="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <script src="../../cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js" tppabs="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+  <script src="../assets/js/docs.min.js" tppabs="http://v3.bootcss.com/assets/js/docs.min.js"></script>
+
+
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../assets/js/ie10-viewport-bug-workaround.js" tppabs="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+<!-- Analytics
+================================================== -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbdb993b828cbe079a7fbc1a951f44726' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- ÂÖ®Â±ÄÁªüËÆ°‰ª£Á†Å -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F079fac161efc4b2a6f31e80064f14e82' type='text/javascript'%3E%3C/script%3E"));
+</script>
+  </body>
+</html>
